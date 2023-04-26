@@ -1,134 +1,77 @@
+printf()
+The printf project is a collaboration between Ms.PODA Adedamola and Hussain Ibrahim, students of Software Engineering at ALX, were a function named "_printf" imitates the actual "printf" command located in the stdio.h library. It contains some of the basic features and functions found in the manual 3 of "printf".
 
-Use: _printf("1 million as a long int is %ld, but as a short int is %hd", 1000000, 1000000);
-Output: 1 million as a long int is 1000000, but as a short int is 16960
+_printf() is a function that performs formatted output conversion and print data. Its prototype is the following:
 
-__File Function__
+int _printf(const char *format, ...)
 
-_printf.c
-Own Printf Function Tha Performs Formatted Output Conversion And Print Data.
+The format tags prototype is the following:
 
-main.h
-Header File Were All Prototypes Are Saved.
+%[flags][length]specifier
+If the program runs successfully, the return value is the amount of chars printed.
 
-get_print_func.c
-Pointer To A Function That Selects The Correct Function To Perform The Operation.
+Specifier  	Output
+c	      Character
+d or i	      Signed decimal integer
+s	      String of characters
 
-print_buf.c
-Function That Prints The Buffer.
+Group Project:                                                                      
+                                                                                    
+0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
+ a Spur for life                                                                    
+Write a function that produces output according to a format.                        
+                                                                                    
+                                                                                    
+1. Education is when you read the fine print. Experience is what you get if you don'
+t                                                                                   
+Handle the following conversion specifiers:
 
-handl_buf.c
-Function That Concatenates The Buffer Characters.
-
-print_chr.c
-Function That Writes The Character C To Stdout.
-
-
-print_str.c
-Function That Writes The String To Stdout.
-
-
-print_int.c
-Function That Prints An Integer.
-
-
-print_bnr.c
-Function That Prints Decimal In Binary.
-
-
-print_oct.c
-Function That Prints Decimal In Octal.
-
-
-print_hex.c
-Function That Prints Decimal In Hexadecimal.
-
-
-print_upx.c
-Function That Prints Decimal In Uppercase Hexadecimal.
-
-
-print_usr.c
-Function That Prints A String And Values Of Non-Printed Chars.
-
-
-print_unt.c
-Function That Prints An Unsigned Integer.
-
-
-print_rev.c
-Function That Writes The String To Stdout In Reverse.
-
-
-print_rot.c
-Function That Writes The String To Stdout In Rot13.
-
-
-print_add.c
-Function That Prints The Address Of An Input Variable.
-
-
-print_long_oct.c
-Function That Prints Long Decimal Number In Octal.
-
-
-print_long_hex.c
-Function That Prints Long Decimal Number In Hexadecimal.
-
-
-print_long_int.c
-Function That Prints A Long Integer.
-
-
-print_long_upx.c
-Function That Prints A Long Decimal In Uppercase Hexadecimal.
-
-
-print_long_unt.c
-Function That Prints A Long Unsigned Integer.
-
-
-print_short_oct.c
-Function That Prints Short Decimal Number In Octal.
-
-
-print_short_hex.c
-Function That Prints Short Decimal Number In Hexadecimal.
-
-
-print_short_int.c
-Function That Prints A Short Integer.
-
-
-print_short_upx.c
-Function That Prints A Short Decimal In Uppercase Hexadecimal.
-
-
-print_short_unt.c
-Function That Prints A Short Unsigned Integer.
-
-
-print_num_hex.c
-Function That Print A Number In Hexadecimal Begining With 0 And x.
-
-
-print_num_oct.c
-Function That Prints A Number In Octal Begining With 0 And o.
-
-
-print_num_upx.c
-Function That Prints A Number In Uppercase Hexadecimal.
-
-
-print_plus_int.c
-Function That Prints An Integer With Plus Symbol.
-
-
-print_space_int.c
-Function That Prints An Integer Begining With 0 And u.
-
-
-ev_print_func.c
-Function That Returns The Amount Of Indetifiers.
-
-Authors
-Ms.PODA Adedamola and Hussain Ibrahim.
+2. With a face like mine, I do better in print                                      
+Handle the following custom conversion specifiers:                                  
+                                                                                    
+3. What one has not experienced, one will never understand in print                 
+Handle the following conversion specifiers:                                         
+                                                                                    
+4. Nothing in fine print is ever good news                                          
+Use a local buffer of 1024 chars in order to call write as little as possible.      
+                                                                                    
+5. My weakness is wearing too much leopard print                                    
+Handle the following custom conversion specifier:                                   
+                                                                                    
+6. How is the world ruled and led to war? Diplomats lie to journalists and believe t
+hese lies when they see them in print                                               
+Handle the following conversion specifier: p.                                       
+                                                                                    
+7. The big print gives and the small print takes away                               
+Handle the following flag characters for non-custom conversion specifiers:          
+                                                                                    
+8. Sarcasm is lost in print                                                         
+Handle the following length modifiers for non-custom conversion specifiers:         
+                                                                                    
+l                                                                                   
+h                                                                                   
+Conversion specifiers to handle: d, i, u, o, x, X                                   
+                                                                                    
+9. Print some money and give it to us for the rain forests                          
+Handle the field width for non-custom conversion specifiers.                        
+                                                                                    
+10. The negative is the equivalent of the composer's score, and the print the perfor
+mance                                                                               
+Handle the precision for non-custom conversion specifiers.                          
+                                                                                    
+11. It's depressing when you're still around and your albums are out of print       
+Handle the 0 flag character for non-custom conversion specifiers.                   
+                                                                                    
+12. Every time that I wanted to give up, if I saw an interesting textile, print what
+ ever, suddenly I would see a collection                                            
+Handle the - flag character for non-custom conversion specifiers.                   
+                                                                                    
+13. Print is the sharpest and the strongest weapon of our party                     
+Handle the following custom conversion specifier:                                   
+                                                                                    
+14. The flood of print has turned reading into a process of gulping rather than savo
+ring                                                                                
+Handle the following custom conversion specifier:                                   
+                                                                                    
+15. *                                                                               
+All the above options work well together. 
